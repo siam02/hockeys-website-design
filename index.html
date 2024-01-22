@@ -17,9 +17,15 @@
                     colors: {
                         clifford: '#da373d',
                         'primary': '#FF4240',
+                        'dark-primary': '#d93332',
                         'secondary': '#131318',
                         'info': '#13131899',
-                    }
+                    },
+                    backgroundImage: {
+                        'program-1': "linear-gradient(to right bottom, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('images/program-1.png')",
+                        'program-2': "linear-gradient(to right bottom, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('images/program-2.png')",
+                        'program-3': "linear-gradient(to right bottom, rgba(19, 19, 24, 0.50), rgba(19, 19, 24, 0.50)), url('images/program-3.png')",
+                    },
                 }
             }
         }
@@ -69,7 +75,8 @@
                 <button class="mr-4 btn bg-white border-0 shadow-none hidden md:block">
                     <i class="fa-solid fa-magnifying-glass text-2xl"></i>
                 </button>
-                <a class="btn bg-primary text-white text-lg lg:text-xl font-bold px-4 lg:px-6 py-2 lg:py-4 h-auto">Get
+                <a
+                    class="btn bg-primary text-white hover:bg-dark-primary text-lg lg:text-xl font-bold px-4 lg:px-6 py-2 lg:py-4 h-auto">Get
                     Ticket</a>
             </div>
         </nav>
@@ -121,14 +128,15 @@
             </div>
             <div class="lg:p-8 p-4 bg-secondary rounded-2xl lg:w-1/2 lg:absolute lg:right-8 lg:bottom-8">
                 <h3 class="text-white font-extrabold mb-2 lg:mb-4">Meet all the heroes from the field</h3>
-                <p class="font-medium text-sm lg:text-base text-[#ffffff99]">Forget capes and costumes, the real heroes wear skates and pads.
+                <p class="font-medium text-sm lg:text-base text-[#ffffff99]">Forget capes and costumes, the real heroes
+                    wear skates and pads.
                     Dive into the stories of grit, passion, and determination that define hockey's finest.
                 </p>
             </div>
         </div>
         <!-- Banner End -->
     </header>
-    <main class="space-y-24 mt-10 lg:mt-24 container px-4 lg:p-0 mx-auto">
+    <main class="lg:space-y-24 space-y-10 mt-10 lg:mt-24 container px-4 lg:p-0 mx-auto">
         <!-- Professional Hockeys Club Section Start -->
         <section>
             <div class="text-center border-y border-dashed p-6 lg:p-8 border-gray-200 mb-6 lg:mb-12">
@@ -139,30 +147,81 @@
                     vibrant world of professional clubs where dreams are chased on frozen battlegrounds.
                 </p>
             </div>
-            <div class="flex flex-col lg:justify-between px-12 lg:px-8 md:px-10 lg:gap-8 gap-6 lg:flex-row md:flex-wrap lg:flex-nowrap">
+            <div
+                class="flex flex-col lg:justify-between px-12 lg:px-8 md:px-10 lg:gap-8 gap-6 lg:flex-row md:flex-wrap lg:flex-nowrap">
                 <div class="text-center">
-                    <div class="radial-progress text-primary mb-6 bg-gray-100" style="--value:87; --size:7.5rem;" role="progressbar"><span class="flex justify-center items-center w-24 h-24 bg-white rounded-full text-secondary font-extrabold text-3xl">87%</span></div>
+                    <div class="radial-progress text-primary mb-6 bg-gray-100" style="--value:87; --size:7.5rem;"
+                        role="progressbar"><span
+                            class="flex justify-center items-center w-24 h-24 bg-white rounded-full text-secondary font-extrabold text-3xl">87%</span>
+                    </div>
                     <h3 class="text-xl font-semibold mb-4">Prayer Facility</h3>
-                    <p class="text-info">Dedicated spaces for players to connect with their faith amidst the intense competition.</p>
+                    <p class="text-info">Dedicated spaces for players to connect with their faith amidst the intense
+                        competition.</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#49D293] mb-6 bg-gray-100" style="--value:95; --size:7.5rem;" role="progressbar"><span class="flex justify-center items-center w-24 h-24 bg-white rounded-full text-secondary font-extrabold text-3xl">95%</span></div>
+                    <div class="radial-progress text-[#49D293] mb-6 bg-gray-100" style="--value:95; --size:7.5rem;"
+                        role="progressbar"><span
+                            class="flex justify-center items-center w-24 h-24 bg-white rounded-full text-secondary font-extrabold text-3xl">95%</span>
+                    </div>
                     <h3 class="text-xl font-semibold mb-4">Experienced Coach</h3>
-                    <p class="text-info">Seasoned veterans with wisdom in their eyes and strategies in their playbook.</p>
+                    <p class="text-info">Seasoned veterans with wisdom in their eyes and strategies in their playbook.
+                    </p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#FFB546] mb-6 bg-gray-100" style="--value:90; --size:7.5rem;" role="progressbar"><span class="flex justify-center items-center w-24 h-24 bg-white rounded-full text-secondary font-extrabold text-3xl">90%</span></div>
+                    <div class="radial-progress text-[#FFB546] mb-6 bg-gray-100" style="--value:90; --size:7.5rem;"
+                        role="progressbar"><span
+                            class="flex justify-center items-center w-24 h-24 bg-white rounded-full text-secondary font-extrabold text-3xl">90%</span>
+                    </div>
                     <h3 class="text-xl font-semibold mb-4">Senior Player</h3>
                     <p class="text-info">Stalwarts on the ice, their grit and skill inspiring the next generation.</p>
                 </div>
                 <div class="text-center">
-                    <div class="radial-progress text-[#4C8DF1] mb-6 bg-gray-100" style="--value:80; --size:7.5rem;" role="progressbar"><span class="flex justify-center items-center w-24 h-24 bg-white rounded-full text-secondary font-extrabold text-3xl">80%</span></div>
+                    <div class="radial-progress text-[#4C8DF1] mb-6 bg-gray-100" style="--value:80; --size:7.5rem;"
+                        role="progressbar"><span
+                            class="flex justify-center items-center w-24 h-24 bg-white rounded-full text-secondary font-extrabold text-3xl">80%</span>
+                    </div>
                     <h3 class="text-xl font-semibold mb-4">Training Ground</h3>
-                    <p class="text-info">State-of-the-art facilities where dreams are honed and skills are sharpened.</p>
+                    <p class="text-info">State-of-the-art facilities where dreams are honed and skills are sharpened.
+                    </p>
                 </div>
             </div>
         </section>
         <!-- Professional Hockeys Club Section End -->
+
+        <!-- Program Sections Start -->
+        <section>
+            <div class="text-center border-y border-dashed p-6 lg:p-8 border-gray-200 mb-6 lg:mb-12">
+                <h2 class="text-secondary text-xl lg:text-4xl font-extrabold mb-4 lg:mb-6">Program Sections
+                </h2>
+                <p class="text-info text-sm lg:text-base lg:w-1/2 lg:mx-auto">Unravel the ladder to greatness: Explore
+                    structured programs for all ages and skill levels, paving the way for your own hockey journey.
+                </p>
+            </div>
+            <div class="flex gap-6 lg:flex-row flex-wrap flex-col">
+                <div class="lg:flex-1 p-6 lg:p-10 lg:pt-24 bg-program-1 rounded-2xl bg-no-repeat bg-cover text-white">
+                    <h3 class="lg:text-3xl text-xl font-extrabold mb-3 lg:mb-4">Junior Program</h3>
+                    <p class="mb-5 lg:mb-6 text-sm lg:text-base">From first steps on the ice to mastering basic techniques, our dedicated coaches guide young players with a focus on fun, sportsmanship, and building a lifelong love for hockey.</p>
+                    <a href="#"
+                        class="btn bg-primary hover:bg-dark-primary text-white px-5 py-2 border-0 text-xl font-semibold">Register
+                        Now!</a>
+                </div>
+                <div class="lg:flex-1 p-6 lg:p-10 lg:pt-24 bg-program-2 rounded-2xl bg-no-repeat bg-cover text-white">
+                    <h3 class="lg:text-3xl text-xl font-extrabold mb-3 lg:mb-4">Teenager Program</h3>
+                    <p class="mb-5 lg:mb-6 text-sm lg:text-base">As skills become sharper and competition heats up, our Teenager Program challenges young players to push their limits, fostering teamwork, resilience, and tactical mastery.</p>
+                    <a href="#"
+                        class="btn bg-primary hover:bg-dark-primary text-white px-5 py-2 border-0 text-xl font-semibold">Register
+                        Now!</a>
+                </div>
+                <div class="w-full p-6 lg:p-10 lg:pt-48 bg-program-3 rounded-2xl bg-no-repeat bg-cover text-white">
+                    <h3 class="lg:text-3xl text-xl font-extrabold mb-3 lg:mb-4">Professional Program</h3>
+                    <p class="mb-5 lg:mb-6 text-sm lg:text-base lg:w-1/2">For those chasing hockey's ultimate glory, our Professional Program offers an intensive training ground, world-class coaching, and access to competitive leagues.</p>
+                    <a href="#"
+                        class="btn bg-primary hover:bg-dark-primary text-white px-5 py-2 border-0 text-xl font-semibold">Register
+                        Now!</a>
+                </div>
+            </div>
+        </section>
+        <!-- Program Sections End -->
     </main>
     <footer>
 
